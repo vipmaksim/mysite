@@ -1,0 +1,49 @@
+body{background:#efefef url(images/oboi3.png); margin: 0; padding: 0;
+ font: 16px/24px Arial, Tahoma;} /* задаем фон сайта, размер текста и его шрифт*/
+a{text-decoration: none;}/*Убираем подчеркивание текста*/
+a:hover{transition: all 0.5s;} /*Задаем анимация тексту*/
+
+/*Структура сайта*/
+div.mid{width: 1200px; margin: 0 auto;}/*Ширина сайта, отступ снизу сверху по 0 , справа слева авто*/
+div.header{background:
+        radial-gradient(#fff, #ff0000 450px, transparent 250px) -10% 15px no-repeat;/*Градиент( его цвет, убираем прямые линии), отступ в право, отступ вниз(если -% то вверх, градиент не повторяеться */
+    background-color: #ff0000; background-size: 850px 131px;}   /*Цвет шапки, размер самого градиента*/
+
+div.footer{margin: 20px 0; text-align: center; text-transform: uppercase;}/* Внешний отступ, текст по центру*/
+
+/*Шапка сайта*/
+div.topmenu{float: right; height: 131px; line-height: 250px;} /*Текст справа, высота, высота линии*/
+div.topmenu a{margin: 0 0 0 70px; color: #000; font-weight: bold;} /*Внешний отступ, цвет, жирный шрифт*/
+div.topmenu a:hover{color: #f5f5f5;} /*Смена цвета при наведении на текст*/
+div.topmenu a{background: #20b2aa; padding: 5px 15px; border-radius: 4px;
+    box-shadow: 6px 6px 8px -1px #000;} /*Фон тегов а, длинна ширина, закругдение, тень*/
+
+/*Главное меню*/
+div.menu {background: #20b2aa; margin: 0 auto; }
+div.menu ul{margin: 10px; padding: 0; list-style: none;}/*отступы и поля убираем, убираем маркеры*/
+div.menu ul li {display: inline-block; margin: 20px 30px;
+    text-transform: uppercase; font-weight: bold;}/*выстроение пунктов в одну строчку, отступы свер сниз побокам, увиличение текста, жирный шрифт*/
+div.menu ul li a{color: #000;}
+div.menu ul li a:hover{color: #efefef;}
+
+/*Контент сайта*/
+div.fon{background: #ff0000;; border: 1px solid #000; border-top: none; padding: 100px;} /*Цвет страницы, граница и ее цывет,отступы */
+div.fon div.clear{border-bottom: 1px dashed #efefef;} /* Разделительная, ширина и цвет, пунктирная линия*/
+div.block{width: 450px; float: left; margin-bottom: 40px;} /*Ширина блока,..., отступ снизу(для пунктира)*/
+div.block:nth-of-type(even){float: right;}
+div.block a p{color: #000;}
+div.anons {background: #f5f5f5; border: 1px solid #ccc; border-radius: 3px; padding: 20px;}
+div.anons:hover {background: #20b2aa; border: 1px solid #bfd5dd; transition: all 1s}
+div.anons img {box-shadow: 5px 5px 20px #000; border-radius: 5px; margin: 5px 5px;}
+div.anons p3 {font-size: 20px; font-weight: normal; margin: 20px 0 10px;}
+div.rec img {width: 1000px; margin: 40px auto;}/*Задаем тень и ее цвет, ширина картинки и отступ от пунктирной линии*/
+
+/*Нижняя часть сайта*/
+div.mid{color: #efefef;}
+
+div.clear{clear: both;} /*очистка оптикания*/
+
+/*Адаптивный дизайн*/
+@media screen and (max-width: 1199px) {     /*Если ширана экрана браузера меньше 1199, то будут применяться*/
+        div.mid{width: 95%;}
+}
